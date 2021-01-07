@@ -184,6 +184,7 @@ body{
     width: 28.22%;
     height: 100%;
     order: 2;
+    object-fit: contain;
 }
 
 .header-box__item1,
