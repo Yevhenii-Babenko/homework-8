@@ -1,13 +1,12 @@
 body{
-    /*min-width: 1100px;*/
+    /*width: 1440px;*/
     /*max-width: 1440px;*/
-    /*width: 100%;*/
-    /*min-height: 600px;*/
+    min-width: 1100px;
+    /*height: 900px;*/
     /*max-height: 900px;*/
-    /*height: 100vh;*/
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    min-height: 600px;
+    /*margin: 0 auto;*/
+    font-family: 'Roboto';
 }
 
 *,
@@ -18,12 +17,12 @@ body{
 }
 
 .wrapper{
-    max-width: 1440px;
     width: 100%;
-    min-height: 600px;
+    max-width: 1440px;
+    /*min-height: 600px;*/
     max-height: 900px;
     display: flex;
-    font-family: 'Baloo Bhai 2', cursive;;
+    /*font-family: 'Baloo Bhai 2', cursive;*/
 }
 
 /* navigation part */
@@ -37,7 +36,7 @@ body{
     /*height: 853px;*/
     /*margin: 2% auto;*/
     height: 94.66%;
-    max-width: 132px;
+    min-width: 132px;
     width: 80.48%;
     margin-top: 14.36%;
     margin-left: 19.7%;
@@ -49,6 +48,7 @@ body{
 }
 
 .inner__rectangle{
+    position: relative;
     margin-top: 9.85%;
     max-width: 81px;
     width: 61.37%;
@@ -59,6 +59,17 @@ body{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.rectangle-shadow{
+    left: 68%;
+    top: 0;
+    position: absolute;
+    width: 61.37%;
+    height: 100%;
+    opacity: 0.6;
+    border-radius: 24px;
+    box-shadow: 15px 15px 30px rgba(23, 23, 26, 0.5);
 }
 
 .inner__logo{
@@ -74,7 +85,7 @@ body{
     width: 100%;
     height: 100%;
     margin: 0;
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 4em;
@@ -85,10 +96,10 @@ body{
 }
 
 .inner__nav{
-    height: 96.75%;
-    max-height: 778px;
     width: 60%;
     max-width: 48px;
+    height: 96.75%;
+    max-height: 778px;
     margin-top: 79.49%;
     display: flex;
     flex-direction: column;
@@ -102,8 +113,12 @@ body{
     margin-bottom: 6.63%;
 }
 
+.nav__link:hover{
+    transform: scale(1.1);
+}
+
 .navigation-img-1{
-    width:26px;
+    width: 26px;
     height: 26px;
 }
 
@@ -194,9 +209,9 @@ body{
 }
 
 .header-box__item1{
-    font-family: "Baloo Bhai", cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2.25em;
     line-height: 158%;
     color: #000000;
@@ -241,9 +256,9 @@ body{
 }
 
 .course-box__item1{
-    font-family: "Baloo Bhai", cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 1em;
     line-height: 162.5%;
     color: #000000;
@@ -253,7 +268,7 @@ body{
 .course-box__item2{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 0.81em;
     line-height: 115.38%;
     color: #000000;
@@ -292,28 +307,31 @@ body{
     cursor: pointer;
 }
 
+.course-button:hover{
+    transform: scale(1.1);
+}
+
 .course-button_item{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.81em;
     line-height: 115.38%;
     color: #FFFFFF;
 }
 
 .course__item-box{
-    width: 15.51%;
-    height: 49.38%;
+    width: 16%;
+    height: 50%;
     display: flex;
     gap: 16.75%;
 }
 
 .item-box__img{
-    object-fit: contain;
+    object-fit: cover;
     height: 40px;
     width: 40px;
 }
-
 
 
 /* footer - section1__courses block-group*/
@@ -343,12 +361,13 @@ body{
 
 .box__item-1_paragraph{
     margin: 0;
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
     font-weight: 800;
     font-size: 1.5em;
     line-height: 158.3%;
     color: #000000;
+    cursor: pointer;
 }
 
 
@@ -411,7 +430,7 @@ body{
 
 
 .box__item-2-h{
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
     margin: 0;
     font-weight: 800;
@@ -490,9 +509,9 @@ body{
 .item__title{
     /*align-self: flex-start;*/
     margin: 0;
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1em;
     line-height: 162.5%;
     color: #000000;
@@ -502,7 +521,7 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 0.8em;
     line-height: 115.38%;
     color: #000000;
@@ -512,15 +531,16 @@ body{
     display: flex;
     align-items: center;
     width: 14%;
-    gap: 1.28%;
+    gap: 4%;
 }
 
 .time__img{
     height: 16px;
     width: 16px;
+    object-fit: contain;
 }
 
-.item-time{
+.box__item-time{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -573,10 +593,14 @@ body{
     cursor: pointer;
 }
 
+.courses-box__button:hover{
+    transform: scale(1.1);
+}
+
 .box__button{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.81em;
     line-height: 115.38%;
     color: #FFFFFF;
@@ -727,7 +751,7 @@ body{
 }
 
 .boxes__item-numbers{
-    /*border: 1px solid green;*/
+    /*border: 1px solid darkblue;*/
     width: 26%;
     max-width: 51px;
     height: 96.18%;
@@ -735,12 +759,13 @@ body{
 }
 
 .item-number{
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     margin: 0;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 800;
     /*font-size: 4em;*/
     font-size: 60px;
+    /*border: 1px solid green;*/
     /*line-height: 159.3%;*/
     color: #000000;
 
@@ -749,7 +774,8 @@ body{
 .boxes__item__block-left,
 .boxes__item__block-right{
     align-self: center;
-    /*margin-top: auto;*/
+    align-content: center;
+    margin-bottom: 5.8%;
     /*border: 1px solid yellow;*/
     /*width: 36.53%;*/
     /*max-width: 76px;*/
@@ -767,7 +793,7 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 1em;
     line-height: 150%;
     color: #000000;
@@ -793,9 +819,9 @@ body{
 }
 .title-item-h{
     margin: 0;
-    font-family: 'Baloo Bhai',cursive;
+    font-family: 'Baloo Bhai 2',cursive;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 1.5em;
     line-height: 158.3%;
     color: #000000;
@@ -803,9 +829,9 @@ body{
 
 .bar-item-h{
     margin: 0 5.33% 0 0;
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 800;
     font-size: 1em;
     line-height: 26px;
     cursor: pointer;
@@ -816,7 +842,21 @@ body{
 .bar-item-h:hover{
     opacity: 1;
 }
-.bar-item-p{
+.bar-button{
+    width: 88px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 8px;
+    /*background: none;*/
+    /* Grey */
+}
+
+.bar-button:hover{
+    background: #F5F5F7;
+    transform: scale(1.1);
+}
+
+.button__item{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -824,6 +864,12 @@ body{
     /*line-height: 115.38px;*/
     color: #000000;
     margin: 0;
+}
+
+.bar-item-img{
+    width: 3.91px;
+    height: 6.88px;
+    object-fit: contain;
 }
 
 .statistics__bar{
@@ -842,12 +888,6 @@ body{
     align-items: center;
     gap: 5.6px;
     cursor: pointer;
-}
-
-.bar-item-img{
-    width: 3.91px;
-    height: 6.88px;
-    object-fit: contain;
 }
 
 .statistics__img{
@@ -882,9 +922,9 @@ body{
 
 .premium-banner_h{
     margin: 0 0 1.52% 0;
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Baloo Bhai 2', cursive;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.5em;
     line-height: 158.3%;
     color: #000000;
@@ -897,8 +937,8 @@ body{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 150%;
     /* or 150% */
     /* Black */
 
@@ -919,9 +959,13 @@ body{
     /*margin-top: auto;*/
     background: #000000;
     border-radius: 8px;
-    width: 120px;
-    height: 40px;
+    width: 64.3%;
+    height: 20.9%;
     cursor: pointer;
+}
+
+.premium-banner__button:hover{
+    transform: scale(1.1);
 }
 
 .banner__button-name{
